@@ -7,15 +7,14 @@ package com.iutblagnac.r303trace;
 public class App {
 
     public static void main(String[] args) {
-        System.out.println(hello());
     }
 
-    public static String hello() {
+    /**
+     * Cette méthode renvoie un "Hello World!"
+     * @return Return "Hello World!"
+     */
+    public static String hello(){
         return "Hello World!";
-    }
-
-    public static String hello(String param) {
-        return param;
     }
 
 }
