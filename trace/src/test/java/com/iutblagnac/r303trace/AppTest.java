@@ -1,45 +1,18 @@
 package com.iutblagnac.r303trace;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+
+
+
+class AppTest {
 
     /**
-     * @return the suite of tests being tested
+     * Test la méthode hello
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Test the return with empty parameter
-     */
-    public void testHelloEmptyParameter()
-    {
+    @Test
+    void testHello() {
         assertEquals("Hello World!", App.hello());
-    }
-
-    /**
-     * Test the return with a parameter
-     */
-    public void testHelloParameter()
-    {
-        assertEquals("Hello JMB!", App.hello("Hello JMB!"));
     }
 }
