@@ -15,4 +15,12 @@ class AppTest {
     void testHello() {
         assertEquals("Hello World!", App.hello());
     }
+
+    /**
+     * Test la méthode hello avec paramètre
+     */
+    @Test
+    void testHelloParam(){
+        assertEquals("Hello Jean!", App.hello("Hello Jean!"));
+    }
 }

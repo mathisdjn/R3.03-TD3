@@ -17,4 +17,13 @@ public class App {
         return "Hello World!";
     }
 
+    /**
+     * Cette méthode renvoi le paramètre
+     * @param pfMot String a renvoyer
+     * @return Return le parametre pfMot
+     */
+    public static String hello(String pfMot){
+        return pfMot;
+    }
+
 }
